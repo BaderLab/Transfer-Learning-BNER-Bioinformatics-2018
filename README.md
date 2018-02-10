@@ -10,6 +10,10 @@ Corpora pre-processing steps were collected in a single script with a jupyter no
 
 The model used in this study is __NeuroNER__, a domain-independent named entity recognizer (NER) based on a bi-directional long short term memory network-conditional random field (LSTM-CRF). A repository for the model can be found [here](https://github.com/Franck-Dernoncourt/NeuroNER). The paper that introduced the model can be found [here](https://arxiv.org/abs/1705.05487).
 
+##### Word Embeddings
+
+The word embeddings used in this study were obtained from [here](http://bio.nlplab.org/#word-vectors). Code for converting the word vectors to the `.txt` format necessary for use with NeuroNER can be found in the __jupyter notebook__ in `preprocessing`, under __data cleaning__.
+
 ### Corpora
 
 All corpora used in this study (which can be re-distributed) are in the `corpora` folder (given in Brat-standoff format).

@@ -7,6 +7,7 @@ import codecs
 from math import ceil
 from collections import Counter
 from nltk import word_tokenize, sent_tokenize
+from gensim.models.keyedvectors import KeyedVectors
 from sklearn.model_selection import train_test_split
 
 # TODO (John): Write tests
@@ -152,6 +153,31 @@ def rm_invalid_ann(corpus_dir, remove=True):
     print()
     print('[INFO] DONE.')
     return invalid_filenames
+
+def convert_bin_to_glove(input_file, output_dir=os.getcwd()):
+    """
+    Converts word embeddings given in the binary C format (w2v)
+    to a text format that can be used with NeuroNER.
+
+    Args:
+        input_file: path to the word vectors file in binary C (w2v) format
+        output_dir: path to save converted word vectors file (defaults to 
+                    current working directory)
+    """
+    assert input_file.endswith('.bin'), "You need to provide a .bin file!"
+    
+    # load word vectors provided in C binary format
+    word_vectors = KeyedVectors.load_word2vec_format(binary_w2v_file_path, binary=True)
+    vocab = word_vectors.vocab
+
+    # write contents of input_file to new file at output_file_path in glove format
+    output_file_path = output_dir + '/converted_word_vectors.txt'
+    with open(output_file_path, 'w+') as f:
+        for word in vocab:
+            vector = word_vectors[word]
+            f.write("%s %s\n" %(word, " ".join(str(v) for v in vector)))
+            
+    print('[INFO] Converted C binary file saved to {}'.format(output_file_path))
 
 ## CORPUS PROCESSING
 
