@@ -4,15 +4,21 @@ This repository contains supplementary data, and links to the model and corpora 
 
 ### Code
 
-Corpora pre-processing steps were collected in a single script with a jupyter notebook for ease-of-use. Script and notebook can be found in `preprocessing`.
+Corpora pre-processing steps were collected in a single script with a jupyter notebook for ease-of-use. Script and notebook can be found in `code`.
 
 #### Model
 
 The model used in this study is __NeuroNER__, a domain-independent named entity recognizer (NER) based on a bi-directional long short term memory network-conditional random field (LSTM-CRF). A repository for the model can be found [here](https://github.com/Franck-Dernoncourt/NeuroNER). The paper that introduced the model can be found [here](https://arxiv.org/abs/1705.05487).
 
+NeurNER uses standard python config files to specify hyperparameters. We provide three of these config files for reproducibility (see `code/configs`):
+
+1. `baseline.ini`: config used while training target data sets (i.e., the baseline.)
+2. `source.ini`: config used while training on the source data sets.
+3. `transfer.ini`: config used while transferring a model trained on the source data set for training on a target data set.
+
 ##### Word Embeddings
 
-The word embeddings used in this study were obtained from [here](http://bio.nlplab.org/#word-vectors). Code for converting the word vectors to the `.txt` format necessary for use with NeuroNER can be found in the __jupyter notebook__ in `preprocessing`, under __data cleaning__.
+The word embeddings used in this study were obtained from [here](http://bio.nlplab.org/#word-vectors). Code for converting the word vectors to the `.txt` format necessary for use with NeuroNER can be found in the __jupyter notebook__ in `code`, under __data cleaning__.
 
 ### Corpora
 
@@ -40,4 +46,4 @@ Alternatively, the corpora can be publicly accessed at the following links:
 
 ### Supplementary Information
 
-The supplementary data can be found in the file `/supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `/supplementary/additional_file_2.zip`.
+The supplementary data can be found in the file `supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `supplementary/additional_file_2.zip`.
