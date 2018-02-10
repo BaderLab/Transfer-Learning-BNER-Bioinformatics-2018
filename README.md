@@ -8,17 +8,17 @@ Corpora pre-processing steps were collected in a single script with a jupyter no
 
 #### Model
 
-The model used in this study is __NeuroNER__, a domain-independent named entity recognizer (NER) based on a bi-directional long short term memory network-conditional random field (LSTM-CRF). A repository for the model can be found [here](https://github.com/Franck-Dernoncourt/NeuroNER). The paper that introduced the model can be found [here](https://arxiv.org/abs/1705.05487).
+The model used in this study is __NeuroNER__ [[1](#citations)], a domain-independent named entity recognizer (NER) based on a bi-directional long short term memory network-conditional random field (LSTM-CRF). A repository for the model can be found [here](https://github.com/Franck-Dernoncourt/NeuroNER).
 
 NeurNER uses standard python config files to specify hyperparameters. We provide three of these config files for reproducibility (see `code/configs`):
 
-1. `baseline.ini`: config used while training target data sets (i.e., the baseline.)
+1. `baseline.ini`: config used while training on the target data sets (i.e., the baseline.)
 2. `source.ini`: config used while training on the source data sets.
 3. `transfer.ini`: config used while transferring a model trained on the source data set for training on a target data set.
 
-##### Word Embeddings
+#### Word Embeddings
 
-The word embeddings used in this study were obtained from [here](http://bio.nlplab.org/#word-vectors). Code for converting the word vectors to the `.txt` format necessary for use with NeuroNER can be found in the __jupyter notebook__ in `code`, under __data cleaning__.
+The word embeddings used in this study were obtained from [here](http://bio.nlplab.org/#word-vectors) [[2](#citations)]. Code for converting the word vectors to the `.txt` format necessary for use with NeuroNER can be found in the __jupyter notebook__ in `code`, under __data cleaning__.
 
 ### Corpora
 
@@ -47,3 +47,8 @@ Alternatively, the corpora can be publicly accessed at the following links:
 ### Supplementary Information
 
 The supplementary data can be found in the file `supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `supplementary/additional_file_2.zip`.
+
+### Citations
+
+1. Dernoncourt, F., Lee, J. Y., & Szolovits, P. (2017). NeuroNER: an easy-to-use program for named-entity recognition based on neural networks. arXiv preprint arXiv:1705.05487.
+2. Moen, S. P. F. G. H., & Ananiadou, T. S. S. (2013). Distributional semantics resources for biomedical text processing. In Proceedings of the 5th International Symposium on Languages in Biology and Medicine, Tokyo, Japan (pp. 39-43).
