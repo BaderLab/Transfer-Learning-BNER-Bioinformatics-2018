@@ -1,6 +1,6 @@
 # Transfer-learning-for-BNER-Bioinformatics-2018
 
-This repository contains supplementary data, and links to the model and corpora used for the paper _Transfer learning for biomedical named entity recognition with neural networks_.
+This repository contains supplementary data, and links to the model and corpora used for the paper _Transfer learning for biomedical named entity recognition with neural networks_ (pre-print available [here](https://www.biorxiv.org/content/early/2018/02/12/262790).)
 
 ### Code
 
