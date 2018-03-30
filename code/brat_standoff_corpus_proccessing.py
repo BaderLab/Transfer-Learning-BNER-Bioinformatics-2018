@@ -34,7 +34,7 @@ def change_ann_labels(corpus_dir, labels_to_replace, new_label, drop=False):
             # read in annotation file at filepath
             with codecs.open(filepath, 'r', encoding = 'utf8') as f:
                 # get all non-empty lines
-                file_lines = [line for line in f.readlines() if len(line.strip()) != 0]
+                file_lines = [l for l in f if len(l.strip()) != 0 and not l.startswith('#')]
             # change all annotations in labels_to_replace to new_label
             with codecs.open(filepath, 'w+', encoding = 'utf8') as f:
                 for line in file_lines:
@@ -305,7 +305,6 @@ def get_corpus_stats(corpus_dir):
         corpus_dir: path to corpus
     """
     # accumulators
-
     # counter object, holds all corpus stats
     c = Counter()
     # accumulators for unique tokens/annotations
@@ -666,7 +665,7 @@ def extract_ann(corpra_dir):
     return unique_entities_in_corpra
 
 def average_len_of_iterable(iterable):
-    """ Returns the average length of string elements in interable. Returns 0
+    """Returns the average length of string elements in interable. Returns 0
     if the iterable is empty.
 
     Args:
