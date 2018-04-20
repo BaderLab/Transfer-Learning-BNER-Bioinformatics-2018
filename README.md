@@ -10,7 +10,7 @@ Corpora pre-processing steps were collected in a single script with a jupyter no
 
 The model used in this study is __NeuroNER__ [[1](#citations)], a domain-independent named entity recognizer (NER) based on a bi-directional long short term memory network-conditional random field (LSTM-CRF). A repository for the model can be found [here](https://github.com/Franck-Dernoncourt/NeuroNER).
 
-NeurNER uses standard python config files to specify hyperparameters. We provide three of these config files for reproducibility (see `code/configs`):
+NeuroNER uses standard python config files to specify hyperparameters. We provide three of these config files for reproducibility (see `code/configs`):
 
 1. `baseline.ini`: config used while training on the target data sets (i.e., the baseline.)
 2. `source.ini`: config used while training on the source data sets.
@@ -49,7 +49,7 @@ Alternatively, the corpora can be publicly accessed at the following links:
 
 ### Supplementary Information
 
-The supplementary data can be found in the file `supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `supplementary/blacklists.zip`.
+The supplementary data can be found in the file `supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `supplementary/blacklists`.
 
 ### Citations
 
