@@ -49,7 +49,7 @@ Alternatively, the corpora can be publicly accessed at the following links:
 
 ### Supplementary Information
 
-The supplementary data can be found in the file `supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `supplementary/additional_file_2.zip`.
+The supplementary data can be found in the file `supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `supplementary/blacklists.zip`.
 
 ### Citations
 
