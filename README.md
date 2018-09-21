@@ -1,6 +1,6 @@
 # Transfer-learning-for-BNER-Bioinformatics-2018
 
-This repository contains supplementary data, and links to the model and corpora used for the paper _Transfer learning for biomedical named entity recognition with neural networks_ (pre-print available [here](https://www.biorxiv.org/content/early/2018/02/12/262790).)
+This repository contains supplementary data, and links to the model and corpora used for the paper _[Transfer learning for biomedical named entity recognition with neural networks](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty449/5026661)_.
 
 ### Code
 
@@ -34,6 +34,7 @@ Alternatively, the corpora can be publicly accessed at the following links:
 | [BioCreative II GM](https://sourceforge.net/projects/biocreative/files/biocreative2entitytagging/1.1/) | Scientific Article | Gold | genes/proteins | [link](https://doi.org/10.1186/gb-2008-9-s2-s2) |
 | [BioInfer](http://mars.cs.utu.fi/BioInfer/?q=download) | Scientific Article | Gold | genes/proteins | [link](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-50) |
 | [BioSemantics](https://biosemantics.org/index.php/resources/chemical-patent-corpus) | Patent | Gold | chemicals, disease | [link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0107477) |
+| [CALBC-III-Small](http://ftp.ebi.ac.uk/pub/databases/CALBC/) | Scientific Article | Silver | chemicals, diseases, species, genes/proteins | [link](https://s3.amazonaws.com/academia.edu.documents/45849509/CALBC_silver_standard_corpus20160522-3059-1j189nl.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1537536482&Signature=hyYEo5%2BVtlPYeaNQwO5KP4o2HMY%3D&response-content-disposition=inline%3B%20filename%3DCalbc_Silver_Standard_Corpus.pdf) |
 | [CDR](http://www.biocreative.org/tasks/biocreative-v/track-3-cdr/) | Scientific Article | Gold | chemicals, diseases | [link](academic.oup.com/database/article/doi/10.1093/database/baw068/2630414) |
 | [CellFinder](https://www.informatik.hu-berlin.de/de/forschung/gebiete/wbi/resources/cellfinder) | Scientific Article | Gold | species, gene/proteins, cells, anatomy | [link](https://www.informatik.hu-berlin.de/de/forschung/gebiete/sar/wbi/research/publications/2012/lrec2012_corpus.pdf)|
 |[CHEMDNER Patent](http://www.biocreative.org/tasks/biocreative-v/track-2-chemdner/)| Patent | Gold | chemicals|[link](https://jcheminf.springeropen.com/articles/10.1186/1758-2946-7-S1-S2)|
@@ -47,6 +48,8 @@ Alternatively, the corpora can be publicly accessed at the following links:
 |[S800](http://species.jensenlab.org/)| Scientific Article | Gold | species|[link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0065390)|
 |[Variome](http://www.opennicta.com.au/home/health/variome)| Scientific Article | Gold | diseases, species, genes/proteins|[link](http://database.oxfordjournals.org/content/2013/bat019.abstract)|
 
+Many of these corpora can also be accessed and visualized in the browser [here](http://corpora.informatik.hu-berlin.de) [[3](#citations)].
+
 ### Supplementary Information
 
 The supplementary data can be found in the file `supplementary/additional_file_1.pdf`. Additionally, blacklists used for the silver-standard corpora (SSCs) can be found in `supplementary/blacklists`.
@@ -55,3 +58,4 @@ The supplementary data can be found in the file `supplementary/additional_file_1
 
 1. Dernoncourt, F., Lee, J. Y., & Szolovits, P. (2017). NeuroNER: an easy-to-use program for named-entity recognition based on neural networks. arXiv preprint arXiv:1705.05487.
 2. Moen, S. P. F. G. H., & Ananiadou, T. S. S. (2013). Distributional semantics resources for biomedical text processing. In Proceedings of the 5th International Symposium on Languages in Biology and Medicine, Tokyo, Japan (pp. 39-43).
+3. Stenetorp, P., Topić, G., Pyysalo, S., Ohta, T., Kim, J. D., & Tsujii, J. I. (2011, June). BioNLP shared task 2011: Supporting resources. In Proceedings of the BioNLP Shared Task 2011 Workshop (pp. 112-120). Association for Computational Linguistics.
