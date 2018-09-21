@@ -1,7 +1,8 @@
 abbott
 accelerate
 adduct
-adductsadjuvant
+adducts
+adjuvant
 adhere
 agar
 agent
